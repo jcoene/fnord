@@ -14,6 +14,8 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.version       = "0.0.1"
 
+  gem.add_dependency "json"
+
   gem.add_development_dependency "rspec", "~> 2.8.0"
   gem.add_development_dependency "guard-rspec"
   gem.add_development_dependency "growl"
