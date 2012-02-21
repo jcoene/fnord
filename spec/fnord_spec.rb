@@ -70,13 +70,13 @@ describe Fnord do
   end
 
   context "sending data" do
-    it "actually sends data" do
+    it "actually sends data with newline" do
       server = UDPSocket.new
       server.bind "localhost", 11111
       f = Fnord.new host: "localhost", port: 11111
       f.event "unicorns_per_hour"
       data, peer = server.recvfrom(128)
-      data.should eql '{"_type":"unicorns_per_hour"}'
+      data.should eql "{\"_type\":\"unicorns_per_hour\"}\n"
     end
   end
 end

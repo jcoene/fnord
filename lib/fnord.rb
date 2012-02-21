@@ -23,8 +23,10 @@ class Fnord
     result
   end
 
+  private
+
   def send_data(json)
-    socket.send json, 0, host, port
+    socket.send "#{json}\n", 0, host, port
   end
 
 end
