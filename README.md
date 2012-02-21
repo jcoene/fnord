@@ -1,12 +1,12 @@
 # Fnord
 
-TODO: Write a gem description
+A FnordMetric client for Ruby
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'fnord'
+    gem "fnord"
 
 And then execute:
 
