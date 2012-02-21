@@ -1,5 +1,3 @@
-require "fnord/client"
-require "fnord/version"
+class Fnord
 
-module Fnord
 end

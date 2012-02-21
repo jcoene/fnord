@@ -1,5 +1,5 @@
 require "spec_helper"
 
-describe Fnord::Client do
+describe Fnord do
 
 end
